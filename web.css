@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+}
+
+header {
+    background-color: #cd84f4;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    font-family: Arial;
+    padding: 50px;
+}
+
+nav {
+    color: white;
+    background-color: #e7c6fa;
+    font-family: 微軟正黑體;
+    text-align: center;
+}
+
+nav a {
+    padding: 8px 25px;
+    display: inline-block;
+}
+
+nav a:hover {
+    border-radius: 20px;
+    background-color: #f2ddff;
+    color: #cd84f4;
+}
+
+.card {
+    background-color: #edd9f9;
+}
+
+.nametop {
+    text-size-adjust: 20px;
+}
+
+.nametext {
+    font-family: 微軟正黑體;
+    color: white;
+    background-color: #f2e7f9;
+}
