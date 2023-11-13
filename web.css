@@ -2,8 +2,12 @@
     margin: 0px;
 }
 
+h2 {
+    color: #8a63a2;
+}
+
 header {
-    background-color: #cd84f4;
+    background-color: #8a63a2;
     color: white;
     margin: 0px;
     text-align: center;
@@ -13,7 +17,7 @@ header {
 
 nav {
     color: white;
-    background-color: #e7c6fa;
+    background-color: #f5f0ff;
     font-family: 微軟正黑體;
     text-align: center;
 }
@@ -21,16 +25,18 @@ nav {
 nav a {
     padding: 8px 25px;
     display: inline-block;
+    text-decoration: none;
 }
 
 nav a:hover {
     border-radius: 20px;
-    background-color: #f2ddff;
+    background-color: #f5f0ff;
     color: #cd84f4;
+    text-decoration: underline;
 }
 
 .card {
-    background-color: #edd9f9;
+    background-color: #f5f0ff;
 }
 
 .nametop {
@@ -40,5 +46,25 @@ nav a:hover {
 .nametext {
     font-family: 微軟正黑體;
     color: white;
-    background-color: #f2e7f9;
+    background-color: #f5f0ff;
+}
+
+.about-image {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-right: 2em;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+}
+
+section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
