@@ -1,5 +1,10 @@
 * {
     margin: 0px;
+    color: #8a63a2;
+}
+
+h1 {
+    color: #fff;
 }
 
 h2 {
@@ -26,11 +31,12 @@ nav a {
     padding: 8px 25px;
     display: inline-block;
     text-decoration: none;
+
 }
 
 nav a:hover {
     border-radius: 20px;
-    background-color: #f5f0ff;
+    background-color: #fff;
     color: #cd84f4;
     text-decoration: underline;
 }
@@ -44,20 +50,25 @@ nav a:hover {
 }
 
 .nametext {
-    font-family: 微軟正黑體;
-    color: white;
-    background-color: #f5f0ff;
+    color: #8a63a2;
 }
 
 .about-image {
     max-width: 200px;
-    border-radius: 50%;
-    margin-right: 2em;
+    border-radius: 5%;
+    margin: 30px 100px;
+}
+
+.social-media {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
 }
 
 .about-container {
     display: flex;
     align-items: center;
+    font-size: 17px;
 }
 
 section {
@@ -67,4 +78,77 @@ section {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    margin-top: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    width: 750px;
+    margin-left: 20px;
+}
+
+.progress-bar div {
+    height: 100%;
+    background-color: #8a63a2;
+    width: 0;
+    animation: progressBarAnimation 2s ease-in-out forwards;
+}
+
+.progress-label {
+    margin-top: 10px;
+}
+
+.progress-bar-50 div {
+    animation: progressBarAnimation50 2s ease-in-out forwards;
+}
+
+.progress-bar-70 div {
+    animation: progressBarAnimation70 2s ease-in-out forwards;
+}
+
+.progress-bar-75 div {
+    animation: progressBarAnimation75 2s ease-in-out forwards;
+}
+
+@keyframes progressBarAnimation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes progressBarAnimation50 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes progressBarAnimation70 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes progressBarAnimation75 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 75%;
+    }
 }
