@@ -83,7 +83,8 @@ hr {
 .about-container {
     display: flex;
     align-items: center;
-    font-size: 17px;
+    font-size: 15px;
+    font-family: 'Noto Serif TC', serif;
 }
 
 section {
@@ -117,6 +118,7 @@ footer {
 
 .progress-bar div {
     height: 100%;
+    border-radius: 5px;
     background-color: #8a63a2;
     width: 0;
     animation: progressBarAnimation 2s ease-in-out forwards;
@@ -128,27 +130,33 @@ footer {
 }
 
 .progress-bar-50 div {
-    animation: progressBarAnimation50 2s ease-in-out forwards;
+    animation: progressBarAnimation50 5s ease-in-out forwards;
+    animation-iteration-count: infinite;
 }
 
 .progress-bar-70 div {
-    animation: progressBarAnimation70 2s ease-in-out forwards;
+    animation: progressBarAnimation70 5s ease-in-out forwards;
+    animation-iteration-count: infinite;
 }
 
 .progress-bar-75 div {
-    animation: progressBarAnimation75 2s ease-in-out forwards;
+    animation: progressBarAnimation75 5s ease-in-out forwards;
+    animation-iteration-count: infinite;
 }
 
 .progress-bar-80 div {
-    animation: progressBarAnimation80 2s ease-in-out forwards;
+    animation: progressBarAnimation80 5s ease-in-out forwards;
+    animation-iteration-count: infinite;
 }
 
 .progress-bar-85 div {
-    animation: progressBarAnimation85 2s ease-in-out forwards;
+    animation: progressBarAnimation85 5s ease-in-out forwards;
+    animation-iteration-count: infinite;
 }
 
 .progress-bar-90 div {
-    animation: progressBarAnimation90 2s ease-in-out forwards;
+    animation: progressBarAnimation90 5s ease-in-out forwards;
+    animation-iteration-count: infinite;
 }
 
 @keyframes progressBarAnimation {
@@ -235,19 +243,20 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
+.life-block img p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Noto Serif TC', serif;
+}
+
 .life-block-ntpc img {
     margin-right: 18px;
     max-width: 200px;
     border-radius: 5%;
     margin: 20px 70px;
     transition: transform 0.3s ease-in-out;
-}
-
-.life-block img p {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 20px;
 }
 
 .life p {
@@ -259,7 +268,7 @@ footer {
 }
 
 .life-p2 {
-    margin-left: 116px;
+    margin-left: 117px;
 }
 
 .life-block p {
