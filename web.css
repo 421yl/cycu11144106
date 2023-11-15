@@ -50,6 +50,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
+hr {
+    color: #8a63a2;
+}
+
 .card {
     background-color: #f5f0ff;
 }
@@ -221,6 +225,22 @@ footer {
     margin-bottom: 20px;
 }
 
+.life-block img {
+    margin-right: 18px;
+    max-width: 300px;
+    border-radius: 5%;
+    margin: 20px 70px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.life-block-ntpc img {
+    margin-right: 18px;
+    max-width: 150px;
+    border-radius: 5%;
+    margin: 20px 70px;
+    transition: transform 0.3s ease-in-out;
+}
+
 .life-block img p {
     display: flex;
     flex-wrap: wrap;
@@ -228,12 +248,12 @@ footer {
     margin-bottom: 20px;
 }
 
-.life-block img {
-    margin-right: 18px;
-    max-width: 300px;
-    border-radius: 5%;
-    margin: 20px 70px;
-    transition: transform 0.3s ease-in-out;
+.life p {
+    margin-left: 100px;
+}
+
+.life-p1 {
+    margin-left: 100px;
 }
 
 .life-block p {
@@ -248,7 +268,8 @@ footer {
 }
 
 .life-block.text-left p {
-    text-align: right;
+    text-align: left;
+    margin-right: 30px;
 }
 
 .life-block:hover img {
