@@ -1,6 +1,5 @@
 * {
     margin: 0px;
-    color: #8a63a2;
 }
 
 h1 {
@@ -20,14 +19,24 @@ header {
     padding: 50px;
 }
 
+body {
+    background-color: #f9f7fe;
+    margin: 0;
+    padding: 0;
+    color: #8a63a2;
+    padding-bottom: 50px;
+}
+
 nav {
     color: white;
-    background-color: #f5f0ff;
+    background-color: #f0e6ff;
     font-family: 微軟正黑體;
     text-align: center;
 }
 
 nav a {
+    color: inherit;
+    color: #8a63a2;
     padding: 8px 25px;
     display: inline-block;
     text-decoration: none;
@@ -80,6 +89,16 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+footer {
+    background-color: #8a63a2;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 .progress-bar {
     margin-top: 20px;
     background-color: #eee;
@@ -99,6 +118,7 @@ section {
 
 .progress-label {
     margin-top: 10px;
+    text-indent: 0.8cm;
 }
 
 .progress-bar-50 div {
@@ -111,6 +131,18 @@ section {
 
 .progress-bar-75 div {
     animation: progressBarAnimation75 2s ease-in-out forwards;
+}
+
+.progress-bar-80 div {
+    animation: progressBarAnimation80 2s ease-in-out forwards;
+}
+
+.progress-bar-85 div {
+    animation: progressBarAnimation85 2s ease-in-out forwards;
+}
+
+.progress-bar-90 div {
+    animation: progressBarAnimation90 2s ease-in-out forwards;
 }
 
 @keyframes progressBarAnimation {
@@ -151,4 +183,74 @@ section {
     to {
         width: 75%;
     }
+}
+
+@keyframes progressBarAnimation80 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes progressBarAnimation85 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 85%;
+    }
+}
+
+@keyframes progressBarAnimation90 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+
+.life-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.life-block img p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.life-block img {
+    margin-right: 18px;
+    max-width: 300px;
+    border-radius: 5%;
+    margin: 20px 70px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.life-block p {
+    flex: 1;
+    text-align: left;
+}
+
+.life-block.text-left img {
+    max-width: 300px;
+    border-radius: 5%;
+    margin: 21px 70px;
+}
+
+.life-block.text-left p {
+    text-align: right;
+}
+
+.life-block:hover img {
+    transform: scale(1.05);
 }
