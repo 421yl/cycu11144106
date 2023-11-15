@@ -25,11 +25,13 @@ body {
     padding: 0;
     color: #8a63a2;
     padding-bottom: 50px;
+    background-image: url(image/bk.jpg);
+    background-attachment: fixed;
 }
 
 nav {
     color: white;
-    background-color: #f0e6ff;
+    background-color: #f5f0ff;
     font-family: 微軟正黑體;
     text-align: center;
 }
@@ -235,7 +237,7 @@ footer {
 
 .life-block-ntpc img {
     margin-right: 18px;
-    max-width: 150px;
+    max-width: 200px;
     border-radius: 5%;
     margin: 20px 70px;
     transition: transform 0.3s ease-in-out;
@@ -254,6 +256,10 @@ footer {
 
 .life-p1 {
     margin-left: 100px;
+}
+
+.life-p2 {
+    margin-left: 110px;
 }
 
 .life-block p {
